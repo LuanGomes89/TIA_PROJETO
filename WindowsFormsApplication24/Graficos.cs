@@ -212,7 +212,13 @@ namespace WindowsFormsApplication24
 
         private void Graficos_Load(object sender, EventArgs e)
         {
+            string[] word = { "1", "2", "3", "4", "5", "6", "7", "8" };
 
+            for (int i = 0; i < 8; i++)
+            {
+                groupBox1.Controls["textBox" + word[i]].Text = valores.valor[i];
+
+            }
         }
 
         private void button1_Click_1(object sender, EventArgs e)

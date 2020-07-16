@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series41 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series42 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series43 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series44 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series45 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series46 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series47 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series48 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series25 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series26 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series27 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series28 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series29 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series30 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series31 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series32 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.btnConect = new System.Windows.Forms.Button();
             this.txtsensor1 = new System.Windows.Forms.Label();
             this.chGrafico1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -67,14 +67,12 @@
             this.ch8 = new System.Windows.Forms.CheckBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.comunicaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.definirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.txtSlave = new System.Windows.Forms.Label();
             this.cbSlave = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.gráficoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.definirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -84,6 +82,7 @@
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gráficoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.chGrafico1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -110,52 +109,52 @@
             // 
             // chGrafico1
             // 
-            chartArea6.Name = "ChartArea1";
-            this.chGrafico1.ChartAreas.Add(chartArea6);
-            legend6.Name = "Legend1";
-            this.chGrafico1.Legends.Add(legend6);
+            chartArea4.Name = "ChartArea1";
+            this.chGrafico1.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.chGrafico1.Legends.Add(legend4);
             this.chGrafico1.Location = new System.Drawing.Point(12, 87);
             this.chGrafico1.Name = "chGrafico1";
-            series41.ChartArea = "ChartArea1";
-            series41.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series41.Legend = "Legend1";
-            series41.Name = "Series1";
-            series42.ChartArea = "ChartArea1";
-            series42.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series42.Legend = "Legend1";
-            series42.Name = "Series2";
-            series43.ChartArea = "ChartArea1";
-            series43.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series43.Legend = "Legend1";
-            series43.Name = "Series3";
-            series44.ChartArea = "ChartArea1";
-            series44.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series44.Legend = "Legend1";
-            series44.Name = "Series4";
-            series45.ChartArea = "ChartArea1";
-            series45.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series45.Legend = "Legend1";
-            series45.Name = "Series5";
-            series46.ChartArea = "ChartArea1";
-            series46.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series46.Legend = "Legend1";
-            series46.Name = "Series6";
-            series47.ChartArea = "ChartArea1";
-            series47.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series47.Legend = "Legend1";
-            series47.Name = "Series7";
-            series48.ChartArea = "ChartArea1";
-            series48.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series48.Legend = "Legend1";
-            series48.Name = "Series8";
-            this.chGrafico1.Series.Add(series41);
-            this.chGrafico1.Series.Add(series42);
-            this.chGrafico1.Series.Add(series43);
-            this.chGrafico1.Series.Add(series44);
-            this.chGrafico1.Series.Add(series45);
-            this.chGrafico1.Series.Add(series46);
-            this.chGrafico1.Series.Add(series47);
-            this.chGrafico1.Series.Add(series48);
+            series25.ChartArea = "ChartArea1";
+            series25.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series25.Legend = "Legend1";
+            series25.Name = "Series1";
+            series26.ChartArea = "ChartArea1";
+            series26.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series26.Legend = "Legend1";
+            series26.Name = "Series2";
+            series27.ChartArea = "ChartArea1";
+            series27.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series27.Legend = "Legend1";
+            series27.Name = "Series3";
+            series28.ChartArea = "ChartArea1";
+            series28.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series28.Legend = "Legend1";
+            series28.Name = "Series4";
+            series29.ChartArea = "ChartArea1";
+            series29.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series29.Legend = "Legend1";
+            series29.Name = "Series5";
+            series30.ChartArea = "ChartArea1";
+            series30.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series30.Legend = "Legend1";
+            series30.Name = "Series6";
+            series31.ChartArea = "ChartArea1";
+            series31.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series31.Legend = "Legend1";
+            series31.Name = "Series7";
+            series32.ChartArea = "ChartArea1";
+            series32.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series32.Legend = "Legend1";
+            series32.Name = "Series8";
+            this.chGrafico1.Series.Add(series25);
+            this.chGrafico1.Series.Add(series26);
+            this.chGrafico1.Series.Add(series27);
+            this.chGrafico1.Series.Add(series28);
+            this.chGrafico1.Series.Add(series29);
+            this.chGrafico1.Series.Add(series30);
+            this.chGrafico1.Series.Add(series31);
+            this.chGrafico1.Series.Add(series32);
             this.chGrafico1.Size = new System.Drawing.Size(676, 254);
             this.chGrafico1.TabIndex = 2;
             this.chGrafico1.Text = "chart1";
@@ -388,7 +387,6 @@
             // menuToolStripMenuItem
             // 
             this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.comunicaçãoToolStripMenuItem,
             this.gráficoToolStripMenuItem,
             this.toolStripSeparator1,
             this.definirToolStripMenuItem});
@@ -396,12 +394,17 @@
             this.menuToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.menuToolStripMenuItem.Text = "Menu";
             // 
-            // comunicaçãoToolStripMenuItem
+            // toolStripSeparator1
             // 
-            this.comunicaçãoToolStripMenuItem.Name = "comunicaçãoToolStripMenuItem";
-            this.comunicaçãoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.comunicaçãoToolStripMenuItem.Text = "Comunicação";
-            this.comunicaçãoToolStripMenuItem.Click += new System.EventHandler(this.comunicaçãoToolStripMenuItem_Click);
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(153, 6);
+            // 
+            // definirToolStripMenuItem
+            // 
+            this.definirToolStripMenuItem.Name = "definirToolStripMenuItem";
+            this.definirToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.definirToolStripMenuItem.Text = "Definir Unidade";
+            this.definirToolStripMenuItem.Click += new System.EventHandler(this.definirToolStripMenuItem_Click);
             // 
             // timer1
             // 
@@ -433,25 +436,6 @@
             this.button1.Text = "Stop";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // gráficoToolStripMenuItem
-            // 
-            this.gráficoToolStripMenuItem.Name = "gráficoToolStripMenuItem";
-            this.gráficoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.gráficoToolStripMenuItem.Text = "Gráfico";
-            this.gráficoToolStripMenuItem.Click += new System.EventHandler(this.gráficoToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
-            // 
-            // definirToolStripMenuItem
-            // 
-            this.definirToolStripMenuItem.Name = "definirToolStripMenuItem";
-            this.definirToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
-            this.definirToolStripMenuItem.Text = "Definir Unidade";
-            this.definirToolStripMenuItem.Click += new System.EventHandler(this.definirToolStripMenuItem_Click);
             // 
             // textBox1
             // 
@@ -526,6 +510,13 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
+            // gráficoToolStripMenuItem
+            // 
+            this.gráficoToolStripMenuItem.Name = "gráficoToolStripMenuItem";
+            this.gráficoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gráficoToolStripMenuItem.Text = "Gráfico";
+            this.gráficoToolStripMenuItem.Click += new System.EventHandler(this.gráficoToolStripMenuItem_Click);
+            // 
             // Graficos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -564,7 +555,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Graficos";
-            this.Text = "Form1";
+            this.Text = "Teste Múltiplo";
             this.Load += new System.EventHandler(this.Graficos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chGrafico1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
@@ -606,23 +597,22 @@
         private System.Windows.Forms.CheckBox ch8;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem comunicaçãoToolStripMenuItem;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label txtSlave;
         private System.Windows.Forms.TextBox cbSlave;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ToolStripMenuItem gráficoToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem definirToolStripMenuItem;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ToolStripMenuItem gráficoToolStripMenuItem;
+        public System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.TextBox textBox2;
+        public System.Windows.Forms.TextBox textBox3;
+        public System.Windows.Forms.TextBox textBox4;
+        public System.Windows.Forms.TextBox textBox5;
+        public System.Windows.Forms.TextBox textBox6;
+        public System.Windows.Forms.TextBox textBox7;
+        public System.Windows.Forms.TextBox textBox8;
+        public System.Windows.Forms.GroupBox groupBox1;
     }
 }
 

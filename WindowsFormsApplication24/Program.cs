@@ -15,7 +15,7 @@ namespace WindowsFormsApplication24
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Graficos());
+            Application.Run(new Form1());
         }
     }
 }
