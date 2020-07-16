@@ -114,29 +114,7 @@ namespace WindowsFormsApplication24
 
         // função para limpar dados-----------------------//
 
-        public void Funcaolimpar()
-        {
-
-            string[] words = { "1", "2", "3", "4", "5", "6", "7", "8" };
-            //string[] words = new string[8];
-
-            for (int i = 0; i < 8; i++)
-            {
-                groupBox2.Controls["lbentrada" + words[i]].Text = "";
-            }
-
-            timer1.Enabled = false;
-
-            check1.Checked = false;
-            check2.Checked = false;
-            check3.Checked = false;
-            check4.Checked = false;
-            check5.Checked = false;
-            check6.Checked = false;
-            check7.Checked = false;
-            check8.Checked = false;
-
-        }
+        
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -172,14 +150,60 @@ namespace WindowsFormsApplication24
           timer1.Enabled = true;
         }
 
-        //------------------------------------------------//
+        //------------------------------------------------// FUNÇÔES  //---------------------------------------------//
+
+        public void Funcaolimpar()
+        {
+
+            string[] word1 = { "1", "2", "3", "4", "5", "6", "7", "8" };
+            string[] word2 = { "9", "10", "11", "12", "13", "14", "15", "16" };
+        
+            //string[] words = new string[8];
+
+            for (int i = 0; i < 8; i++)
+            {
+                groupBox2.Controls["lbentrada" + word1[i]].Text = "";
+                groupBox3.Controls["lbentrada" + word2[i]].Text = "";
+            }
+
+            timer1.Enabled = false;
+
+            checkAll.Checked = false;
+            check1.Checked = false;
+            check2.Checked = false;
+            check3.Checked = false;
+            check4.Checked = false;
+            check5.Checked = false;
+            check6.Checked = false;
+            check7.Checked = false;
+            check8.Checked = false;
+
+
+            //--------------------------------------------------// FUNÇÔES //---------------------------------------------------//
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string[] word1 = { "1", "2", "3", "4", "5", "6", "7", "8" };
+            string[] word2 = { "9", "10", "11", "12", "13", "14", "15", "16" };
+
+            for (int i = 0; i < 8; i++)
+            {
+                groupBox3.Controls["lbentrada" + word2[i]].Text = groupBox2.Controls["lbentrada" + word1[i]].Text;
+            }
+        }
     }
+
+
 
     public static class valores
     {
         public static string[] valor = new string[8];
 
     }
+
+
 }
 
 

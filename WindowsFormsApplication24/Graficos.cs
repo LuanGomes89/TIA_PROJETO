@@ -20,7 +20,7 @@ namespace WindowsFormsApplication24
 
         SerialPort ports = new SerialPort();
 
-        public static class Grafico
+        public static class Grafico // variavel estatica para pegar valores do formulario 1 e passar para o formulario 3
         {
             public static string Gdados;
         }
@@ -43,7 +43,13 @@ namespace WindowsFormsApplication24
                     ports.Close();
                     btnConect.Text = "Desconected";
                     timer1.Enabled = false;
-                  
+                    Grafico.Gdados = null;
+                    for (int i = 0; i < 8; i++)
+                    {
+                        chGrafico1.Series[i].Points.Clear();
+                    }
+
+
                 }
                 else
                 {
@@ -85,8 +91,10 @@ namespace WindowsFormsApplication24
                 //  bool[] teste = master.ReadCoils(2, 269, 1);
                 //   textBox1.Text = Convert.ToString(teste);
 
-
-                this.dado[0] = (dado1[0]).ToString();
+                for (int i = 0; i < 8; i++)
+                {
+                    this.dado[0] = (dado1[0]).ToString();
+                }
                 this.dado[1] = (dado1[1]).ToString();
                 this.dado[2] = (dado1[2]).ToString();
                 this.dado[3] = (dado1[3]).ToString();
@@ -194,19 +202,27 @@ namespace WindowsFormsApplication24
 
 
             {
-                  chGrafico1.Series[0].Points.AddY(Convert.ToDouble(this.dado[0]));
+
+                /*chGrafico1.Series[0].Points.AddY(Convert.ToDouble(this.dado[0]));
                   chGrafico1.Series[1].Points.AddY(Convert.ToDouble(this.dado[1]));
                   chGrafico1.Series[2].Points.AddY(Convert.ToDouble(this.dado[2]));
                   chGrafico1.Series[3].Points.AddY(Convert.ToDouble(this.dado[3]));
                   chGrafico1.Series[4].Points.AddY(Convert.ToDouble(this.dado[4]));
                   chGrafico1.Series[5].Points.AddY(Convert.ToDouble(this.dado[5]));
                   chGrafico1.Series[6].Points.AddY(Convert.ToDouble(this.dado[6]));
-                  chGrafico1.Series[7].Points.AddY(Convert.ToDouble(this.dado[7]));
+                  chGrafico1.Series[7].Points.AddY(Convert.ToDouble(this.dado[7]));*///antes
+           
+                for (int i = 0; i < 8; i++)
+                {
+                    chGrafico1.Series[i].Points.AddY(Convert.ToDouble(this.dado[i]));
+                }
+
             }
 
+            //mudar diminuir essas linhas 
           lbsenso1.Text = this.dado[0]; lbsenso2.Text = this.dado[1]; lbsenso3.Text = this.dado[2];
-            lbsenso4.Text = this.dado[3]; lbsenso5.Text = this.dado[4]; lbsenso6.Text = this.dado[5];
-            lbsenso7.Text = this.dado[6]; lbsenso8.Text = this.dado[7];
+          lbsenso4.Text = this.dado[3]; lbsenso5.Text = this.dado[4]; lbsenso6.Text = this.dado[5];
+          lbsenso7.Text = this.dado[6]; lbsenso8.Text = this.dado[7];
 
         }
 
@@ -250,18 +266,15 @@ namespace WindowsFormsApplication24
             for (int i = 0; i < 8; i++)
             {
                 groupBox1.Controls["textBox" + word[i]].Text = valores.valor[i];
+                groupBox2.Controls["lbunidade" + word[i]].Text = valores.valor[i];
                 
-            }
 
-               /* textBox1.Text = valores.valor[0];
-                textBox2.Text = valores.valor[1];
-                textBox3.Text = valores.valor[2];
-                textBox4.Text = valores.valor[3];
-                textBox5.Text = valores.valor[4];
-                textBox6.Text = valores.valor[5];
-                textBox7.Text = valores.valor[6];
-                textBox8.Text = valores.valor[7];*/
-            
+            }
+       }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

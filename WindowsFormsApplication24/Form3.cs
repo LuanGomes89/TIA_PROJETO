@@ -18,6 +18,7 @@ namespace WindowsFormsApplication24
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            if(Graficos.Grafico.Gdados != null)
             chart1.Series[0].Points.AddY(Convert.ToDouble(Graficos.Grafico.Gdados));
         }
 
