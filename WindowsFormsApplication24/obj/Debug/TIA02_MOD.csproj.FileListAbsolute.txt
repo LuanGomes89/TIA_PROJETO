@@ -12,3 +12,4 @@ c:\users\user1\documents\visual studio 2015\Projects\WindowsFormsApplication24\W
 c:\users\user1\documents\visual studio 2015\Projects\WindowsFormsApplication24\WindowsFormsApplication24\obj\Debug\WindowsFormsApplication24.pdb
 c:\users\user1\documents\visual studio 2015\Projects\WindowsFormsApplication24\WindowsFormsApplication24\obj\Debug\TIA02_MOD.csprojResolveAssemblyReference.cache
 c:\users\user1\documents\visual studio 2015\Projects\WindowsFormsApplication24\WindowsFormsApplication24\obj\Debug\WindowsFormsApplication24.Definir_Unidade.resources
+c:\users\user1\documents\visual studio 2015\Projects\WindowsFormsApplication24\WindowsFormsApplication24\obj\Debug\WindowsFormsApplication24.Fundo_de_Escala.resources

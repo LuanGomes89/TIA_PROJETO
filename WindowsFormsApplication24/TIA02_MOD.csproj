@@ -58,6 +58,12 @@
     <Compile Include="Definir Unidade.Designer.cs">
       <DependentUpon>Definir Unidade.cs</DependentUpon>
     </Compile>
+    <Compile Include="Fundo de Escala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fundo de Escala.Designer.cs">
+      <DependentUpon>Fundo de Escala.cs</DependentUpon>
+    </Compile>
     <Compile Include="Graficos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Definir Unidade.resx">
       <DependentUpon>Definir Unidade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fundo de Escala.resx">
+      <DependentUpon>Fundo de Escala.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Graficos.resx">
       <DependentUpon>Graficos.cs</DependentUpon>
