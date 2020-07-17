@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series15 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series16 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.btnConect = new System.Windows.Forms.Button();
             this.chGrafico1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.ch1 = new System.Windows.Forms.CheckBox();
@@ -51,11 +51,10 @@
             this.ch8 = new System.Windows.Forms.CheckBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.comunicaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gráficoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.definirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.txtSlave = new System.Windows.Forms.Label();
             this.cbSlave = new System.Windows.Forms.TextBox();
@@ -94,10 +93,10 @@
             this.txtsensor2 = new System.Windows.Forms.Label();
             this.lbsenso1 = new System.Windows.Forms.Label();
             this.txtsensor1 = new System.Windows.Forms.Label();
-            this.testeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.testeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.txtvel = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.chGrafico1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -110,58 +109,58 @@
             this.btnConect.Name = "btnConect";
             this.btnConect.Size = new System.Drawing.Size(105, 23);
             this.btnConect.TabIndex = 0;
-            this.btnConect.Text = "Desconected";
+            this.btnConect.Text = "Iniciar";
             this.btnConect.UseVisualStyleBackColor = true;
             this.btnConect.Click += new System.EventHandler(this.button1_Click);
             // 
             // chGrafico1
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chGrafico1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chGrafico1.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.chGrafico1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chGrafico1.Legends.Add(legend2);
             this.chGrafico1.Location = new System.Drawing.Point(12, 97);
             this.chGrafico1.Name = "chGrafico1";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series2.Legend = "Legend1";
-            series2.Name = "Series2";
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series3.Legend = "Legend1";
-            series3.Name = "Series3";
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series4.Legend = "Legend1";
-            series4.Name = "Series4";
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series5.Legend = "Legend1";
-            series5.Name = "Series5";
-            series6.ChartArea = "ChartArea1";
-            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series6.Legend = "Legend1";
-            series6.Name = "Series6";
-            series7.ChartArea = "ChartArea1";
-            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series7.Legend = "Legend1";
-            series7.Name = "Series7";
-            series8.ChartArea = "ChartArea1";
-            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series8.Legend = "Legend1";
-            series8.Name = "Series8";
-            this.chGrafico1.Series.Add(series1);
-            this.chGrafico1.Series.Add(series2);
-            this.chGrafico1.Series.Add(series3);
-            this.chGrafico1.Series.Add(series4);
-            this.chGrafico1.Series.Add(series5);
-            this.chGrafico1.Series.Add(series6);
-            this.chGrafico1.Series.Add(series7);
-            this.chGrafico1.Series.Add(series8);
+            series9.ChartArea = "ChartArea1";
+            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series9.Legend = "Legend1";
+            series9.Name = "Series1";
+            series10.ChartArea = "ChartArea1";
+            series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series10.Legend = "Legend1";
+            series10.Name = "Series2";
+            series11.ChartArea = "ChartArea1";
+            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series11.Legend = "Legend1";
+            series11.Name = "Series3";
+            series12.ChartArea = "ChartArea1";
+            series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series12.Legend = "Legend1";
+            series12.Name = "Series4";
+            series13.ChartArea = "ChartArea1";
+            series13.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series13.Legend = "Legend1";
+            series13.Name = "Series5";
+            series14.ChartArea = "ChartArea1";
+            series14.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series14.Legend = "Legend1";
+            series14.Name = "Series6";
+            series15.ChartArea = "ChartArea1";
+            series15.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series15.Legend = "Legend1";
+            series15.Name = "Series7";
+            series16.ChartArea = "ChartArea1";
+            series16.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series16.Legend = "Legend1";
+            series16.Name = "Series8";
+            this.chGrafico1.Series.Add(series9);
+            this.chGrafico1.Series.Add(series10);
+            this.chGrafico1.Series.Add(series11);
+            this.chGrafico1.Series.Add(series12);
+            this.chGrafico1.Series.Add(series13);
+            this.chGrafico1.Series.Add(series14);
+            this.chGrafico1.Series.Add(series15);
+            this.chGrafico1.Series.Add(series16);
             this.chGrafico1.Size = new System.Drawing.Size(676, 244);
             this.chGrafico1.TabIndex = 2;
             this.chGrafico1.Text = "chart1";
@@ -259,60 +258,47 @@
             // menuToolStripMenuItem
             // 
             this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.comunicaçãoToolStripMenuItem,
             this.gráficoToolStripMenuItem,
             this.toolStripSeparator1,
-            this.definirToolStripMenuItem,
-            this.toolStripTextBox1,
-            this.testeToolStripMenuItem,
-            this.testeToolStripMenuItem1,
             this.toolStripSeparator2,
             this.sairToolStripMenuItem});
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
             this.menuToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.menuToolStripMenuItem.Text = "Menu";
             // 
-            // comunicaçãoToolStripMenuItem
-            // 
-            this.comunicaçãoToolStripMenuItem.Name = "comunicaçãoToolStripMenuItem";
-            this.comunicaçãoToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
-            this.comunicaçãoToolStripMenuItem.Text = "Comunicação";
-            this.comunicaçãoToolStripMenuItem.Click += new System.EventHandler(this.comunicaçãoToolStripMenuItem_Click);
-            // 
             // gráficoToolStripMenuItem
             // 
             this.gráficoToolStripMenuItem.Name = "gráficoToolStripMenuItem";
-            this.gráficoToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
+            this.gráficoToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.gráficoToolStripMenuItem.Text = "Gráfico";
             this.gráficoToolStripMenuItem.Click += new System.EventHandler(this.gráficoToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(250, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(109, 6);
             // 
-            // definirToolStripMenuItem
+            // toolStripSeparator2
             // 
-            this.definirToolStripMenuItem.Name = "definirToolStripMenuItem";
-            this.definirToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
-            this.definirToolStripMenuItem.Text = "Definir Unidade e Fundo de escala";
-            this.definirToolStripMenuItem.Click += new System.EventHandler(this.definirToolStripMenuItem_Click);
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(109, 6);
             // 
-            // toolStripTextBox1
+            // sairToolStripMenuItem
             // 
-            this.toolStripTextBox1.Name = "toolStripTextBox1";
-            this.toolStripTextBox1.Size = new System.Drawing.Size(100, 23);
-            this.toolStripTextBox1.Text = "Teste";
+            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
+            this.sairToolStripMenuItem.Text = "Sair";
+            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
             // timer1
             // 
-            this.timer1.Interval = 500;
+            this.timer1.Interval = 50;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // txtSlave
             // 
             this.txtSlave.AutoSize = true;
-            this.txtSlave.Location = new System.Drawing.Point(537, 371);
+            this.txtSlave.Location = new System.Drawing.Point(652, 394);
             this.txtSlave.Name = "txtSlave";
             this.txtSlave.Size = new System.Drawing.Size(49, 13);
             this.txtSlave.TabIndex = 28;
@@ -320,10 +306,11 @@
             // 
             // cbSlave
             // 
-            this.cbSlave.Location = new System.Drawing.Point(589, 364);
+            this.cbSlave.Location = new System.Drawing.Point(704, 391);
             this.cbSlave.Name = "cbSlave";
-            this.cbSlave.Size = new System.Drawing.Size(100, 20);
+            this.cbSlave.Size = new System.Drawing.Size(73, 20);
             this.cbSlave.TabIndex = 29;
+            this.cbSlave.Text = "1";
             // 
             // button1
             // 
@@ -663,35 +650,51 @@
             this.txtsensor1.TabIndex = 48;
             this.txtsensor1.Text = "Sensor 1";
             // 
-            // testeToolStripMenuItem
+            // checkBox1
             // 
-            this.testeToolStripMenuItem.Name = "testeToolStripMenuItem";
-            this.testeToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
-            this.testeToolStripMenuItem.Text = "Teste";
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(445, 381);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(59, 17);
+            this.checkBox1.TabIndex = 41;
+            this.checkBox1.Text = "Normal";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // testeToolStripMenuItem1
+            // checkBox2
             // 
-            this.testeToolStripMenuItem1.Name = "testeToolStripMenuItem1";
-            this.testeToolStripMenuItem1.Size = new System.Drawing.Size(253, 22);
-            this.testeToolStripMenuItem1.Text = "Teste";
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(445, 359);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(60, 17);
+            this.checkBox2.TabIndex = 42;
+            this.checkBox2.Text = "Rápido";
+            this.checkBox2.UseVisualStyleBackColor = true;
             // 
-            // toolStripSeparator2
+            // txtvel
             // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(250, 6);
+            this.txtvel.Location = new System.Drawing.Point(532, 379);
+            this.txtvel.Name = "txtvel";
+            this.txtvel.Size = new System.Drawing.Size(71, 20);
+            this.txtvel.TabIndex = 43;
             // 
-            // sairToolStripMenuItem
+            // label1
             // 
-            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
-            this.sairToolStripMenuItem.Text = "Sair";
-            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(529, 360);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(74, 13);
+            this.label1.TabIndex = 44;
+            this.label1.Text = "Vel. Aquisição";
             // 
             // Graficos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(796, 435);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtvel);
+            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button1);
@@ -738,14 +741,12 @@
         private System.Windows.Forms.CheckBox ch8;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem comunicaçãoToolStripMenuItem;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label txtSlave;
         private System.Windows.Forms.TextBox cbSlave;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ToolStripMenuItem gráficoToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripMenuItem definirToolStripMenuItem;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
@@ -780,11 +781,12 @@
         private System.Windows.Forms.Label txtsensor2;
         private System.Windows.Forms.Label lbsenso1;
         private System.Windows.Forms.Label txtsensor1;
-        private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
-        private System.Windows.Forms.ToolStripMenuItem testeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem testeToolStripMenuItem1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.TextBox txtvel;
+        private System.Windows.Forms.Label label1;
     }
 }
 

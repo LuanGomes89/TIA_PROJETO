@@ -20,6 +20,8 @@ namespace WindowsFormsApplication24
 
         SerialPort ports = new SerialPort();
 
+       
+
         public static class Grafico // variavel estatica para pegar valores do formulario 1 e passar para o formulario 3
         {
             public static string Gdados;
@@ -42,6 +44,7 @@ namespace WindowsFormsApplication24
                 {
                     ports.Close();
                     btnConect.Text = "Desconected";
+                    btnConect.BackColor = Color.LightSalmon;
                     timer1.Enabled = false;
                     Grafico.Gdados = null;
                     for (int i = 0; i < 8; i++)
@@ -55,6 +58,7 @@ namespace WindowsFormsApplication24
                 {
                     ports.Open();
                     btnConect.Text = "Conected";
+                    btnConect.BackColor = Color.LightGreen;
                     timer1.Enabled = true;
             }
             }catch (Exception)
@@ -67,18 +71,20 @@ namespace WindowsFormsApplication24
         private void comunicaçãoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             form.ShowDialog();
-           
-
-            ports.PortName = form.cbPorta.Text;
-            ports.BaudRate = Convert.ToInt32(form.cbBaud.Text);
-            ports.DataBits = Convert.ToByte(form.Cbdata.Text);
-            ports.Parity = (Parity)Enum.Parse(typeof(Parity), form.cdParity.Text);
-            ports.StopBits = (StopBits)Enum.Parse(typeof(StopBits), form.Cbstop.Text);
-
+                      
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            /*
+            int timer_vel = new int();
+
+            timer_vel = Convert.ToInt32(txtvel.Text);
+
+            timer1.Interval = timer_vel;
+            */
+
+
             // inicia modbus
             try
             {
@@ -235,6 +241,12 @@ namespace WindowsFormsApplication24
                 groupBox1.Controls["textBox" + word[i]].Text = valores.valor[i];
 
             }
+
+            ports.PortName = dados.porta;
+            ports.BaudRate = Convert.ToInt32(dados.baud);
+            ports.DataBits = Convert.ToByte(dados.bits);
+            ports.Parity = (Parity)Enum.Parse(typeof(Parity), dados.paridade);
+            ports.StopBits = (StopBits)Enum.Parse(typeof(StopBits), Convert.ToString(dados.stop));
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -276,6 +288,8 @@ namespace WindowsFormsApplication24
         {
             Close();
         }
+
+       
     }
 }
 

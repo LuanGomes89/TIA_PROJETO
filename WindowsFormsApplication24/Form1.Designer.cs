@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -40,7 +38,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.interfaceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.intervaloDeArmazenamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fundoDeEscalaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.portaDeComunicaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,33 +46,15 @@
             this.calibraçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.coeficientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.definirUnidadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.fecharToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox2.Image = global::WindowsFormsApplication24.Properties.Resources.imagemT2;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 35);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(205, 61);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Image = global::WindowsFormsApplication24.Properties.Resources.Imagem1;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 167);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(512, 424);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // button1
             // 
@@ -104,6 +83,7 @@
             this.button3.TabIndex = 4;
             this.button3.Text = "Fundo de Escala";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -130,7 +110,7 @@
             this.label1.BackColor = System.Drawing.SystemColors.Control;
             this.label1.Font = new System.Drawing.Font("3DS Fonticon", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label1.Location = new System.Drawing.Point(359, 35);
+            this.label1.Location = new System.Drawing.Point(359, 46);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(570, 32);
             this.label1.TabIndex = 7;
@@ -174,16 +154,11 @@
             this.intervaloDeArmazenamentoToolStripMenuItem,
             this.fundoDeEscalaToolStripMenuItem,
             this.portaDeComunicaçãoToolStripMenuItem,
-            this.manutençãoToolStripMenuItem});
+            this.manutençãoToolStripMenuItem,
+            this.fecharToolStripMenuItem});
             this.interfaceToolStripMenuItem.Name = "interfaceToolStripMenuItem";
             this.interfaceToolStripMenuItem.Size = new System.Drawing.Size(73, 21);
             this.interfaceToolStripMenuItem.Text = "Interface";
-            // 
-            // sobreToolStripMenuItem
-            // 
-            this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
-            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(55, 21);
-            this.sobreToolStripMenuItem.Text = "Sobre";
             // 
             // intervaloDeArmazenamentoToolStripMenuItem
             // 
@@ -196,6 +171,7 @@
             this.fundoDeEscalaToolStripMenuItem.Name = "fundoDeEscalaToolStripMenuItem";
             this.fundoDeEscalaToolStripMenuItem.Size = new System.Drawing.Size(254, 22);
             this.fundoDeEscalaToolStripMenuItem.Text = "Fundo de Escala";
+            this.fundoDeEscalaToolStripMenuItem.Click += new System.EventHandler(this.fundoDeEscalaToolStripMenuItem_Click);
             // 
             // portaDeComunicaçãoToolStripMenuItem
             // 
@@ -240,6 +216,12 @@
             this.definirUnidadesToolStripMenuItem.Text = "Definir unidades";
             this.definirUnidadesToolStripMenuItem.Click += new System.EventHandler(this.definirUnidadesToolStripMenuItem_Click);
             // 
+            // sobreToolStripMenuItem
+            // 
+            this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
+            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(55, 21);
+            this.sobreToolStripMenuItem.Text = "Sobre";
+            // 
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.ScrollBar;
@@ -251,6 +233,35 @@
             this.textBox1.TabIndex = 11;
             this.textBox1.Text = "Registros";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox2.Image = global::WindowsFormsApplication24.Properties.Resources.imagemT2;
+            this.pictureBox2.Location = new System.Drawing.Point(12, 35);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(205, 61);
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox1.Image = global::WindowsFormsApplication24.Properties.Resources.Imagem1;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 167);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(512, 424);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // fecharToolStripMenuItem
+            // 
+            this.fecharToolStripMenuItem.Name = "fecharToolStripMenuItem";
+            this.fecharToolStripMenuItem.Size = new System.Drawing.Size(254, 22);
+            this.fecharToolStripMenuItem.Text = "Fechar";
+            this.fecharToolStripMenuItem.Click += new System.EventHandler(this.fecharToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -272,10 +283,10 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -305,5 +316,6 @@
         private System.Windows.Forms.ToolStripMenuItem definirUnidadesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sobreToolStripMenuItem;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ToolStripMenuItem fecharToolStripMenuItem;
     }
 }

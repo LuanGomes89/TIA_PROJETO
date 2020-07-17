@@ -156,14 +156,14 @@ namespace WindowsFormsApplication24
         {
 
             string[] word1 = { "1", "2", "3", "4", "5", "6", "7", "8" };
-            string[] word2 = { "9", "10", "11", "12", "13", "14", "15", "16" };
+            //string[] word2 = { "9", "10", "11", "12", "13", "14", "15", "16" };
         
             //string[] words = new string[8];
 
             for (int i = 0; i < 8; i++)
             {
                 groupBox2.Controls["lbentrada" + word1[i]].Text = "";
-                groupBox3.Controls["lbentrada" + word2[i]].Text = "";
+                //groupBox3.Controls["lbentrada" + word2[i]].Text = "";
             }
 
             timer1.Enabled = false;
@@ -185,6 +185,7 @@ namespace WindowsFormsApplication24
 
         private void button2_Click(object sender, EventArgs e)
         {
+            /*
             string[] word1 = { "1", "2", "3", "4", "5", "6", "7", "8" };
             string[] word2 = { "9", "10", "11", "12", "13", "14", "15", "16" };
 
@@ -192,6 +193,21 @@ namespace WindowsFormsApplication24
             {
                 groupBox3.Controls["lbentrada" + word2[i]].Text = groupBox2.Controls["lbentrada" + word1[i]].Text;
             }
+            */
+        }
+
+        private void Definir_Unidade_Load(object sender, EventArgs e)
+        {
+            /*
+            string[] word = { "1", "2", "3", "4", "5", "6", "7", "8" };
+            for (int i = 0; i < 8; i++)
+                                                         
+                {
+                    groupBox1.Controls["textBox" + word[i]].Text = valores.valor[i];
+
+                }
+                */
+            
         }
     }
 
@@ -200,6 +216,8 @@ namespace WindowsFormsApplication24
     public static class valores
     {
         public static string[] valor = new string[8];
+
+       
 
     }
 
