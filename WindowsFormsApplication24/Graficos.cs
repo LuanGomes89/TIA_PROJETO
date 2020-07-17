@@ -76,14 +76,8 @@ namespace WindowsFormsApplication24
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            /*
-            int timer_vel = new int();
 
-            timer_vel = Convert.ToInt32(txtvel.Text);
-
-            timer1.Interval = timer_vel;
-            */
-
+                      
 
             // inicia modbus
             try
@@ -289,7 +283,14 @@ namespace WindowsFormsApplication24
             Close();
         }
 
-       
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int timer_vel;
+
+            timer_vel = Convert.ToInt32(txtvel.Text);
+
+            timer1.Interval = timer_vel;
+        }
     }
 }
 

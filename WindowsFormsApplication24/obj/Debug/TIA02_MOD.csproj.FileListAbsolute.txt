@@ -28,4 +28,5 @@ C:\Users\Renan\Desktop\Projeto TIA\Software\TIA_PROJETO\WindowsFormsApplication2
 C:\Users\Renan\Desktop\Projeto TIA\Software\TIA_PROJETO\WindowsFormsApplication24\obj\Debug\WindowsFormsApplication24.exe
 C:\Users\Renan\Desktop\Projeto TIA\Software\TIA_PROJETO\WindowsFormsApplication24\obj\Debug\WindowsFormsApplication24.pdb
 C:\Users\Renan\Desktop\Projeto TIA\Software\TIA_PROJETO\WindowsFormsApplication24\obj\Debug\WindowsFormsApplication24.Form4.resources
-C:\Users\Renan\Desktop\Projeto TIA\Software\TIA_PROJETO\WindowsFormsApplication24\obj\Debug\WindowsFormsApplication24.dados.resources
+C:\Users\Renan\Desktop\Projeto TIA\Software\TIA_PROJETO\WindowsFormsApplication24\obj\Debug\WindowsFormsApplication24.Form1.resources
+C:\Users\Renan\Desktop\Projeto TIA\Software\TIA_PROJETO\WindowsFormsApplication24\obj\Debug\WindowsFormsApplication24.Form5.resources

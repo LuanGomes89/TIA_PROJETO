@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series15 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series16 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series17 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series18 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series19 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series20 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series21 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series22 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series23 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series24 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.btnConect = new System.Windows.Forms.Button();
             this.chGrafico1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.ch1 = new System.Windows.Forms.CheckBox();
@@ -97,6 +97,7 @@
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.txtvel = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.chGrafico1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -115,52 +116,52 @@
             // 
             // chGrafico1
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chGrafico1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chGrafico1.Legends.Add(legend2);
+            chartArea3.Name = "ChartArea1";
+            this.chGrafico1.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chGrafico1.Legends.Add(legend3);
             this.chGrafico1.Location = new System.Drawing.Point(12, 97);
             this.chGrafico1.Name = "chGrafico1";
-            series9.ChartArea = "ChartArea1";
-            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series9.Legend = "Legend1";
-            series9.Name = "Series1";
-            series10.ChartArea = "ChartArea1";
-            series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series10.Legend = "Legend1";
-            series10.Name = "Series2";
-            series11.ChartArea = "ChartArea1";
-            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series11.Legend = "Legend1";
-            series11.Name = "Series3";
-            series12.ChartArea = "ChartArea1";
-            series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series12.Legend = "Legend1";
-            series12.Name = "Series4";
-            series13.ChartArea = "ChartArea1";
-            series13.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series13.Legend = "Legend1";
-            series13.Name = "Series5";
-            series14.ChartArea = "ChartArea1";
-            series14.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series14.Legend = "Legend1";
-            series14.Name = "Series6";
-            series15.ChartArea = "ChartArea1";
-            series15.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series15.Legend = "Legend1";
-            series15.Name = "Series7";
-            series16.ChartArea = "ChartArea1";
-            series16.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series16.Legend = "Legend1";
-            series16.Name = "Series8";
-            this.chGrafico1.Series.Add(series9);
-            this.chGrafico1.Series.Add(series10);
-            this.chGrafico1.Series.Add(series11);
-            this.chGrafico1.Series.Add(series12);
-            this.chGrafico1.Series.Add(series13);
-            this.chGrafico1.Series.Add(series14);
-            this.chGrafico1.Series.Add(series15);
-            this.chGrafico1.Series.Add(series16);
+            series17.ChartArea = "ChartArea1";
+            series17.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series17.Legend = "Legend1";
+            series17.Name = "Series1";
+            series18.ChartArea = "ChartArea1";
+            series18.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series18.Legend = "Legend1";
+            series18.Name = "Series2";
+            series19.ChartArea = "ChartArea1";
+            series19.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series19.Legend = "Legend1";
+            series19.Name = "Series3";
+            series20.ChartArea = "ChartArea1";
+            series20.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series20.Legend = "Legend1";
+            series20.Name = "Series4";
+            series21.ChartArea = "ChartArea1";
+            series21.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series21.Legend = "Legend1";
+            series21.Name = "Series5";
+            series22.ChartArea = "ChartArea1";
+            series22.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series22.Legend = "Legend1";
+            series22.Name = "Series6";
+            series23.ChartArea = "ChartArea1";
+            series23.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series23.Legend = "Legend1";
+            series23.Name = "Series7";
+            series24.ChartArea = "ChartArea1";
+            series24.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series24.Legend = "Legend1";
+            series24.Name = "Series8";
+            this.chGrafico1.Series.Add(series17);
+            this.chGrafico1.Series.Add(series18);
+            this.chGrafico1.Series.Add(series19);
+            this.chGrafico1.Series.Add(series20);
+            this.chGrafico1.Series.Add(series21);
+            this.chGrafico1.Series.Add(series22);
+            this.chGrafico1.Series.Add(series23);
+            this.chGrafico1.Series.Add(series24);
             this.chGrafico1.Size = new System.Drawing.Size(676, 244);
             this.chGrafico1.TabIndex = 2;
             this.chGrafico1.Text = "chart1";
@@ -292,7 +293,7 @@
             // 
             // timer1
             // 
-            this.timer1.Interval = 50;
+            this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // txtSlave
@@ -676,6 +677,7 @@
             this.txtvel.Name = "txtvel";
             this.txtvel.Size = new System.Drawing.Size(71, 20);
             this.txtvel.TabIndex = 43;
+            this.txtvel.Text = "1000";
             // 
             // label1
             // 
@@ -686,11 +688,22 @@
             this.label1.TabIndex = 44;
             this.label1.Text = "Vel. Aquisição";
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(445, 404);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(78, 24);
+            this.button2.TabIndex = 45;
+            this.button2.Text = "Enviar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Graficos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(796, 435);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtvel);
             this.Controls.Add(this.checkBox2);
@@ -787,6 +800,7 @@
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.TextBox txtvel;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button2;
     }
 }
 
